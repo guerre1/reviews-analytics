@@ -21,3 +21,10 @@ for d in date:
  	new.append(d)
 print('一共有', len(new), '筆留言小於100個字母')
 print(new[0])
+
+great = []
+for d in date:
+	if 'great' in d:
+		great.append(d)
+print('一共有', len(great), '筆留言提到great')
+print(great[0])
