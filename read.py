@@ -12,4 +12,12 @@ print('檔案讀取完畢,總共有' ,len(date), '筆資料')
 sum_len = 0
 for d in date:
 	sum_len += len(d) #sum_len = sum_len + len(d)
-print('留言平均長度是', sum_len/len(date),'個字')
+print('留言平均長度是', sum_len/len(date),'個字母')
+
+
+new = []
+for d in date:
+ if len(d) < 100:
+ 	new.append(d)
+print('一共有', len(new), '筆留言小於100個字母')
+print(new[0])
